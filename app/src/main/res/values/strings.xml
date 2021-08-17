@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ZuriStageTwo</string>
+    <string name="label">Enter your name</string>
+    <string name="hng_logo">hng_logo</string>
+    <string name="i4g_logo">i4g Logo</string>
+    <string name="zuri_logo">zuri logo</string>
+    <string name="display">Display</string>
+    <string name="tolulope_longe">Tolulope Longe</string>
+    <string name="https_hng_tech">https://hng.tech/</string>
+    <string name="https_zuri_team">https://zuri.team/</string>
+    <string name="https_ingressive_org">https://ingressive.org/</string>
+</resources>
