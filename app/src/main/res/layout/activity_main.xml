@@ -16,6 +16,7 @@
         android:textColor="#090909"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:autoLink="web"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3" />
 
@@ -27,6 +28,7 @@
         android:text="@string/https_zuri_team"
         android:textColor="#2196F3"
         android:textSize="20sp"
+        android:autoLink="web"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline4" />
@@ -37,6 +39,7 @@
         android:layout_height="wrap_content"
         android:textColor="#7B1FA2"
         android:textSize="20sp"
+        android:autoLink="web"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
