@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
             val name = binding.activityMainEdt.text
             if (name?.isNotEmpty() == true){
                 binding.activityMainTxtName.text = name
+                binding.activityMainEdt.text?.clear()
             }else{
                 Snackbar.make(binding.root,"Please enter your name",Snackbar.LENGTH_LONG).show()
             }
