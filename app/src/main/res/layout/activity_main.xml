@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/home_background">
+    android:background="@drawable/home_background"
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:autoLink="web"
         android:text="@string/https_hng_tech"
         android:textColor="#090909"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold"
-        android:autoLink="web"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3" />
 
@@ -24,58 +24,61 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginBottom="16dp"
+        android:autoLink="web"
         android:text="@string/https_zuri_team"
         android:textColor="#2196F3"
-        android:textSize="20sp"
-        android:autoLink="web"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:text="@string/https_ingressive_org"
         android:textColor="#7B1FA2"
         android:textSize="20sp"
-        android:autoLink="web"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        android:text="@string/https_ingressive_org" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="92dp"
         android:layout_height="90dp"
         android:layout_marginTop="4dp"
+        android:contentDescription="@string/hng_logo"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hng_logo"
-        android:contentDescription="@string/hng_logo" />
+        app:srcCompat="@drawable/hng_logo" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="113dp"
         android:layout_height="61dp"
-        android:layout_marginTop="36dp"
         android:contentDescription="@string/i4g_logo"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toBottomOf="@+id/activity_main_txt_name"
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
         app:srcCompat="@drawable/i4g_logo" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="86dp"
         android:layout_height="94dp"
+        android:contentDescription="@string/zuri_logo"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/zuri_logo"
-        android:contentDescription="@string/zuri_logo" />
+        app:srcCompat="@drawable/zuri_logo" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textField"
@@ -91,8 +94,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/activity_main_edt"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -107,12 +109,12 @@
         android:id="@+id/activity_main_display_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="@color/black"
         android:text="@string/display"
         android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toBottomOf="@+id/textField" />
 
@@ -120,11 +122,11 @@
         android:id="@+id/activity_main_txt_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
         android:textColor="#1D7068"
         android:textSize="34sp"
         android:textStyle="bold"
-        android:visibility="invisible"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
@@ -143,4 +145,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.96" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85772914" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75786597" />
 </androidx.constraintlayout.widget.ConstraintLayout>
