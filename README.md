@@ -4,7 +4,11 @@ Basic Name Display App
 
 
 
-https://user-images.githubusercontent.com/40584796/129735736-76e5a5b9-680f-462f-9d0a-ff5dc429b9c5.mp4
+
+https://user-images.githubusercontent.com/40584796/129905729-559a2275-6f55-44af-b21c-2934a6b03960.mp4
+
+
+
 
 
 
